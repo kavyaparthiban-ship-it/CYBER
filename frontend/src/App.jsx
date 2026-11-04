@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const API = "/api";
 
@@ -275,10 +275,8 @@ function App() {
     }
   };
 
-  const visibleFindings = useMemo(() => {
-    const findings = analysis?.assessment?.findings || [];
-    return filter === "ALL" ? findings : findings.filter((item) => item.status === filter);
-  }, [analysis, filter]);
+  const findings = analysis?.assessment?.findings || [];
+  const visibleFindings = filter === "ALL" ? findings : findings.filter((item) => item.status === filter);
 
   const capture = analysis?.capture;
   const maxProtocol = capture ? Math.max(capture.ike_count, capture.esp_count, capture.ah_count, 1) : 1;
