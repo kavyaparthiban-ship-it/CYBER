@@ -1,6 +1,6 @@
-# HACKGRID — IPsec VPN Security Analyzer
+# AETHERIS — IPsec VPN Security Analyzer
 
-An offline-first Smart India Hackathon 2026 PoC for **SIH26160** (HACKGRID, Team 126281). It parses classic PCAP v2.4 captures, identifies observable IKE/ESP/AH headers, applies a small explicit ruleset, stores results in SQLite, and generates a PDF report.
+It parses classic PCAP v2.4 captures, identifies observable IKE/ESP/AH headers, applies a small explicit ruleset, stores results in SQLite, and generates a PDF report.
 
 ## Run on Windows
 
